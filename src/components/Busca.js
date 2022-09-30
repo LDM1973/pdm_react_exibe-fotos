@@ -4,11 +4,6 @@ import { Button } from 'primereact/button'
 
 export default class Busca extends Component {
 
-    constructor(props){
-        super(props)
-    }
-
-
     state = {
         termoDeBusca: ''
     }
@@ -20,7 +15,7 @@ export default class Busca extends Component {
 
     onFormSubmit = (event) => {
         event.preventDefault()
-        this.props.onBuscaRealizada(this.state.temoDeBusca)
+        this.props.onBuscaRealizada(this.state.termoDeBusca)
     }
 
     render() {
